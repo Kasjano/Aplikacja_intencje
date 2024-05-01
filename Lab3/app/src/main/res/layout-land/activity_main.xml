@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="828dp"
+        android:layout_height="44dp"
+        android:background="#00BCD4"
+        android:text="Landscape"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText,VisualLintBounds" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="183dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:onClick="OpenSettings"
+        android:text="Ustawienia"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="183dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="64dp"
+        android:onClick="OpenMap"
+        android:text="GoogleMap"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="187dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:text="Zrób zdjęcie"
+        android:onClick="OpenCamera"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editNumber"
+        android:layout_width="111dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="szerokość"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toStartOf="@+id/editNumber2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editNumber2"
+        android:layout_width="107dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="długość"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="Autofill,HardcodedText,TextContrastCheck,TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="359dp"
+        android:layout_height="273dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.852"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.623" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
